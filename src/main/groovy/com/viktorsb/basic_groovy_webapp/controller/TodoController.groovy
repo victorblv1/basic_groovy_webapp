@@ -28,12 +28,12 @@ class TodoController {
     }
 
     @DeleteMapping('/{todoId}')
-    deleteTodo(@PathVariable Integer todoId) {
+    deleteTodo(@PathVariable Long todoId) {
         todoService.deleteTodo todoId
     }
 
     @GetMapping('/{todoId}')
-    Todo getTodoById(@PathVariable Integer todoId) {
+    Todo getTodoById(@PathVariable Long todoId) {
         todoService.findById todoId
     }
 }

@@ -17,7 +17,7 @@ class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    Todo findById(Long id) {
+    Todo findById(Long todoId) {
         todoRepository.findById todoId get()
     }
 
@@ -32,7 +32,7 @@ class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    Todo deleteTodo(Todo todo) {
+    Todo deleteTodo(Long todoId) {
         todoRepository.deleteById todoId
     }
 }
